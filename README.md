@@ -17,9 +17,9 @@ To load the demonstrational TurnUp data to MongoDB, continue following these ins
 <p><strong>4. </strong>Install the MongoDB database tools by finding and following <strong>all</strong> the instructions for your operating system here:</br>
  https://www.mongodb.com/docs/database-tools/installation/installation/</p>
  
-<p><strong>5. </strong>Once the MongoDB database tools are installed, open your operating systems' command prompt and <code>cd</code> to the root directory of the cloned repository</p>
+<p><strong>5. </strong>Once the MongoDB database tools are installed, open your operating systems' command prompt and <code>cd</code> to the root directory of the cloned repository.</p>
 
 <p><strong>6. </strong>In this directory run <code>mongorestore</code></br>
-This wil load the test data from the "dump" folder</p>
+This wil load the test data from the "dump" folder.</p>
 
-<p><strong>You are now ready to use the TurnUp client!</strong></p>
+<p><strong>You are now ready to use the TurnUp server!</strong></p>

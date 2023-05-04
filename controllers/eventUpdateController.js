@@ -4,7 +4,7 @@ async function getEventUpdates(req, res) {
     const { id: eventId } = req.params
 
     try {
-        const eventUpdates = await EventUpdate.find({ eventId })
+        const eventUpdates = await EventUpdate.find({ eventId }).sort({ createdAt: -1 })
         res.status(200).json(eventUpdates)
     } catch (err) {
         console.log(err)

@@ -1,14 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-const { authenticateToken, uploadVenueFile } = require('../middleware')
+const { authenticateToken, fileUploads } = require('../middleware')
 const { venueController } = require('../controllers')
 
 router.get('/all', venueController.getVenues)
 
-router.post('/new', authenticateToken, uploadVenueFile, venueController.registerVenue)
+router.post('/new', authenticateToken, fileUploads.uploadVenueFile, venueController.registerVenue)
 
-router.put('/edit/:id', authenticateToken, uploadVenueFile, venueController.editVenue)
+router.put('/edit/:id', authenticateToken, fileUploads.uploadVenueFile, venueController.editVenue)
 
 router.delete('/delete/:id', authenticateToken, venueController.deleteVenue)
 

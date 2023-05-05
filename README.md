@@ -6,7 +6,7 @@
 https://www.mongodb.com/try/download/community</br>
 Then, install MongoDB by running the msi installer</p>
 
-<p><strong>2. </strong>Clone the repository, <code>cd</code> into the root folder and run <code>npm install</code> to install the required dependencies.</p>
+<p><strong>2. </strong>Clone the repository, <code>cd</code> into the root directory and run <code>npm install</code> to install the required dependencies.</p>
 
 <p><strong>3. </strong>Run <code>npm run start</code> to start the server. This will run the server at <code>http://localhost:3000/</code> by default.</br>
 You may navigate to that url and verify the server is listening. If so, you will see <code>{"message":"Welcome to TurnUp"}</code> in your browser.</p>

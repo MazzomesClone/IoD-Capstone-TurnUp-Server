@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
-const { authenticateToken, uploadUserPFPFile } = require('../middleware')
+const { authenticateToken, fileUploads } = require('../middleware')
 const { userController } = require('../controllers')
 
 router.post('/login', userController.loginUser)
 
-router.put('/edit', authenticateToken, uploadUserPFPFile, userController.editUser)
+router.put('/edit', authenticateToken, fileUploads.uploadUserPFPFile, userController.editUser)
 
 router.post('/new', userController.registerUser)
 

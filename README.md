@@ -1,4 +1,5 @@
 # IoD Capstone Project - TurnUp Server
+<h3>This server is live on an AWS EC2 instance connected to MongoDB Atlas and can be accessed through the <a href="https://github.com/MazzomesClone/IoD-Capstone-TurnUp-Client">Live Client</a></h3>
 <h4>This repository contains the files necessary to run the backend server for the TurnUp client</h4>
 <p>In order to run this server locally, follow these instructions:<p>
   

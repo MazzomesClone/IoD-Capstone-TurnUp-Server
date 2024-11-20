@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser')
 const app = express()
 
 require('dotenv').config()
-require('./dbConnect')
+// require('./dbConnect')
 
 const PORT = process.env.PORT
 const appName = "TurnUp"
@@ -33,3 +33,5 @@ app.listen(PORT, () => {
     console.log('TurnUp Started')
     console.log('Server listening on port ' + PORT)
 })
+
+export default app
